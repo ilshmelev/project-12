@@ -1,0 +1,144 @@
+.gallery {
+    align-items: center;
+    min-width: 320px;
+    min-height: 136px;
+    margin-bottom: 60px;
+
+    background: linear-gradient(to bottom,
+            #FFF5F6 19.85%,
+            #FFFFFF 19.85%,
+            #FFFFFF 100%);
+
+    @include mq(tablet) {
+        min-width: 768px;
+        min-height: 327px;
+        background: linear-gradient(to bottom,
+                #FFF5F6 57.18%,
+                #FFFFFF 57.18%,
+                #FFFFFF 100%)
+    }
+    
+    @include mq(desktop) {
+        min-width: 1200px;
+        min-height: 430px;
+        margin-bottom: 120px;
+        background: linear-gradient(to bottom,
+                #FFF5F6 19.85%,
+                #FFFFFF 19.85%,
+                #FFFFFF 100%)
+    }
+            @include mq(tablet){
+                min-width: 768px;
+                min-height: 327px;
+                background: linear-gradient(to bottom,
+                            #FFF5F6 57.18%,
+                            #FFFFFF 57.18%,
+                            #FFFFFF 100%)
+            }
+            @include mq(desktop){
+                min-width: 1200px;
+                min-height: 430px;
+                margin-bottom: 120px;
+                background: linear-gradient(to bottom,
+                            #FFF5F6 19.85%,
+                            #FFFFFF 19.85%,
+                            #FFFFFF 100%)
+            }
+}
+
+.gallery__h {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.gallery__grid {
+    display: grid;
+    max-width: auto;
+    
+    justify-content: center;
+    grid: repeat(21, 4.15px) / repeat(7, 43.86px);
+    @include mq(mobile-only){
+        grid-gap: 2.43px;
+    }
+
+    @include mq(tablet) {
+        grid-gap: 6.07px;
+        grid: repeat(21, 9.96px) / repeat(7, 104.62px);
+    }
+
+    @include mq(desktop) {
+        grid-gap: 8px;
+        grid: repeat(21, 13.12px) / repeat(7, 138px);
+    }
+}
+.gallery__photo--image{
+    @include mq(mobile){
+        border-radius: 8px;
+    }
+    @include mq(tablet){
+        border-radius: 20px;
+    }
+}
+
+.gallery__photo {
+    background-size: contain;
+    grid-area: auto;
+
+}
+
+.gallery__photo--first {
+    grid-area: 9 / 1 / span 7 / span 1;
+    
+}
+
+.gallery__photo--second {
+    grid-area: 5 / 2 / span 7 / span 1;
+    
+}
+
+.gallery__photo--third {
+    grid-area: 12 / 2 / span 7 / span 1;
+ 
+}
+
+.gallery__photo--fourth {
+    grid-area: 1 / 3 / span 14 / span 2;
+    
+}
+
+.gallery__photo--fifth {
+    grid-area: 15 / 3 / span 7 / span 1;
+
+    
+}
+
+.gallery__photo--sixth {
+    grid-area: 6 / 5 / span 7 / span 1;
+
+    
+}
+
+.gallery__photo--seventh {
+    grid-area: 13 / 5 / span 7 / span 1;
+
+    
+}
+
+.gallery__photo--eighth {
+    grid-area: 4 / 6 / span 7 / span 1;
+
+    
+}
+
+.gallery__photo--nineth {
+    grid-area: 11 / 6 / span 7 / span 1;
+
+    
+}
+
+.gallery__photo--tenth {
+    grid-area: 9/ 7 / span 7 / span 1;
+
+    
+}

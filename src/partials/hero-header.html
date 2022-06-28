@@ -1,0 +1,243 @@
+<header id="home" class="header">
+  <div class="container header__container">
+    <nav class="site-nav" id="scroll-menu">
+      <a href="./" class="logo">
+        <svg class="logo__icon" width="199" height="50">
+          <use href="./images/sprite/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav__link-acent" href="#home">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#about">About us</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#howismade">How it's made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#products">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header-button__list">
+      <li class="header-button__item">
+        <button
+          type="button"
+          class="mobile-button__open"
+          aria-controls="mob-menu"
+          aria-label="mobile menu switch"
+          data-menu-open
+        >
+          <div class="mobile-button__icon"></div>
+          <div class="mobile-button__icon"></div>
+          <div class="mobile-button__icon"></div>
+        </button>
+      </li>
+      <li class="header-button__item">
+        <button class="header-button">
+          Buy now
+          <svg class="header-button__icon" width="10px" height="20px">
+            <use href="./images/sprite/sprite.svg#icon-button"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- моб меню -->
+  <div class="mobile-menu" data-menu data-modal-close2>
+    <div class="mobile-menu__container" id="mobile-menu">
+      <button
+        class="close-btn mobile-menu__close-btn mob-menu__btn-close"
+        type="button"
+        aria-label="mobile menu switch"
+        data-menu-close
+      >
+        <svg class="close-btn__icon">
+          <use href="./images/sprite/modals.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <button class="header-button header-button--mob">
+        Buy now
+        <svg class="header-button__icon" width="20px" height="20px">
+          <use href="./images/sprite/sprite.svg#icon-button"></use>
+        </svg>
+      </button>
+
+      <nav id="scroll-menu2">
+        <ul class="mobile-menu__site-nav" aria-label="mobile menu list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link active-mobile"
+              >Home</a
+            >
+          </li>
+          <li class="mobile-menu__item" data-menu-about>
+            <a href="#about" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="mobile-menu__item" data-menu-howismade>
+            <a href="#howismade" class="mobile-menu__link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item" data-menu-products>
+            <a href="#products" class="mobile-menu__link">Our products</a>
+          </li>
+          <li class="mobile-menu__item" data-menu-contacts>
+            <a href="#contacts" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero-thumb">
+      <h1 class="hero-title">
+        ice cream<br />made with<br /><span class="hero-title__acent"
+          >passion</span
+        >
+      </h1>
+      <ul class="hero-button__list">
+        <li class="hero-button__item">
+          <button class="hero-button hero-button__acent">Products</button>
+        </li>
+        <li class="hero-button__item">
+          <button class="hero-button">How it's made?</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero-thumb">
+      <ul class="thumb__list">
+        <li class="hero-thumb__item">
+          <p class="hero-thumb__title">
+            16
+            <svg class="hero-thumb-title__icon" width="30px" height="30px">
+              <use href="./images/sprite/sprite.svg#icon-circle"></use>
+            </svg>
+          </p>
+          <p class="hero-thumb__text">cafes</p>
+        </li>
+
+        <li class="hero-thumb__item">
+          <p class="hero-thumb__title">
+            23
+            <svg class="hero-thumb-title__icon" width="30px" height="30px">
+              <use href="./images/sprite/sprite.svg#icon-circle"></use>
+            </svg>
+          </p>
+          <p class="hero-thumb__text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero-thumb">
+      <p class="hero-thumb__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <a class="hero-thumb__link">
+        <svg class="hero-thumb__icon" width="26" height="26">
+          <use href="./images/sprite/sprite.svg#right-arrow1"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hero__icon"></div>
+
+    <div class="hero-thumb">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero-header/image-1_dt.png    1x,
+            ./images/hero-header/image-1_dt@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/image-1_tb.png    1x,
+            ./images/hero-header/image-1_tb@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero-header/image-1_dt.png"
+          alt="designer"
+          width=""
+          loading="lazy"
+        />
+      </picture>
+    </div>
+
+    <div class="hero-thumb">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero-header/image-2_dt.png    1x,
+            ./images/hero-header/image-2_dt@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/image-2_tb.png    1x,
+            ./images/hero-header/image-2_tb@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero-header/image-2_mb.png    1x,
+            ./images/hero-header/image-2_mb@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero-header/image-2_tb.png"
+          alt=""
+          width=""
+          loading="lazy"
+        />
+      </picture>
+    </div>
+
+    <div class="hero-thumb">
+      <picture class="right-thumb__image">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero-header/image-3_dt.png    1x,
+            ./images/hero-header/image-3_dt@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero-header/image-3_tb.png    1x,
+            ./images/hero-header/image-3_tb@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero-header/image-3_dt.png"
+          alt="designer"
+          width=""
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

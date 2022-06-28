@@ -1,2 +1,21 @@
 @import './common';
-@import './example';
+@import './utils/vars';
+@import './utils/reset';
+@import './utils/mixins';
+
+@import './utils/container';
+
+// CSS файли для секцій сторінки
+
+@import './layouts/hero-header';
+@import './layouts/customer-reviews';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+// components
+@import './components/modals';
+@import './components/mob-menu';
